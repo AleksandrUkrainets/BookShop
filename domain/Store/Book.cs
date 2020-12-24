@@ -2,7 +2,7 @@
 
 namespace Store
 {
-    public class Book
+    public class Book 
     {
 
         public int Id { get; }
