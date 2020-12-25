@@ -22,5 +22,10 @@ namespace StoreMemory
         {
             return _books.Where(book => book.Title.Contains(titleOrAuthor) || book.Author.Contains(titleOrAuthor)).ToArray();
         }
+
+        public Book GetById(int id)
+        {
+            return _books.Single(Book => Book.Id.Equals(id));//my version
+        }
     }
 }
